@@ -26,9 +26,13 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
 
   const account = document.createElement('div');
   if (user) {
-    account.appendChild(createButton({ size: 'small', label: 'Log out', onClick: onLogout }));
+    account.appendChild(
+      createButton({ size: 'small', label: 'Log out', onClick: onLogout })
+    );
   } else {
-    account.appendChild(createButton({ size: 'small', label: 'Log in', onClick: onLogin }));
+    account.appendChild(
+      createButton({ size: 'small', label: 'Log in', onClick: onLogin })
+    );
     account.appendChild(
       createButton({
         size: 'small',

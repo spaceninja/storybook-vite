@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import smallMarkup from './examples/button-small.html?raw';
+import mediumMarkup from './examples/button-medium.html?raw';
+import largeMarkup from './examples/button-large.html?raw';
+import defaultMarkup from './examples/button-default.html?raw';
+import primaryMarkup from './examples/button-primary.html?raw';
+import secondaryMarkup from './examples/button-secondary.html?raw';
+
+<Meta title="Components/Buttons" component="Button" />
+
+# Button
+
+Let's define a story for our `Button` component:
+
+<Story name="Story">{() => defaultMarkup}</Story>
+
+We can drop it in a `Canvas` to get a code snippet:
+
+<Canvas>
+  <Story name="Canvas">{() => defaultMarkup}</Story>
+</Canvas>
+
+We can even preview multiple Stories in a block. This
+gets rendered as a group but defines individual stories
+with unique URLs, which is great for review and testing.
+
+## Styles
+
+<Canvas>
+  <Story name="Default">{() => defaultMarkup}</Story>
+  <Story name="Primary">{() => primaryMarkup}</Story>
+  <Story name="Secondary">{() => secondaryMarkup}</Story>
+</Canvas>
+
+## Sizes
+
+<Canvas>
+  <Story name="Small">{() => smallMarkup}</Story>
+  <Story name="Medium">{() => mediumMarkup}</Story>
+  <Story name="Large">{() => largeMarkup}</Story>
+</Canvas>
