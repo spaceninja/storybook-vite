@@ -41,4 +41,14 @@ export const parameters = {
     lightClass: 't-light',
     stylePreview: true,
   },
+
+  /**
+   * Sorting stories
+   * @see https://storybook.js.org/docs/react/writing-stories/naming-components-and-hierarchy#sorting-stories
+   */
+  options: {
+    storySort: {
+      order: ['Overview', 'Guidelines', 'Components'],
+    },
+  },
 };

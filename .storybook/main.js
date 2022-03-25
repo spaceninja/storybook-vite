@@ -8,9 +8,9 @@ module.exports = {
     {
       name: '@storybook/addon-essentials',
       options: {
-        actions: false,
-        backgrounds: false,
-        controls: false,
+        actions: false, // pointless for html/css
+        backgrounds: false, // we prefer switching themes
+        controls: false, // pointless for html/css
       },
     },
     '@storybook/addon-a11y',
