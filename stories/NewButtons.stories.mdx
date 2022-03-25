@@ -17,7 +17,18 @@ Let's define a story for our `Button` component:
 We can drop it in a `Canvas` to get a code snippet:
 
 <Canvas>
-  <Story name="Canvas">{() => defaultMarkup}</Story>
+  <Story
+    name="Canvas"
+    parameters={{
+      docs: {
+        source: {
+          code: defaultMarkup,
+        },
+      },
+    }}
+  >
+    {() => defaultMarkup}
+  </Story>
 </Canvas>
 
 We can even preview multiple Stories in a block. This
@@ -27,15 +38,81 @@ with unique URLs, which is great for review and testing.
 ## Styles
 
 <Canvas>
-  <Story name="Default">{() => defaultMarkup}</Story>
-  <Story name="Primary">{() => primaryMarkup}</Story>
-  <Story name="Secondary">{() => secondaryMarkup}</Story>
+  <Story
+    name="Default"
+    parameters={{
+      docs: {
+        source: {
+          code: defaultMarkup,
+        },
+      },
+    }}
+  >
+    {() => defaultMarkup}
+  </Story>
+  <Story
+    name="Primary"
+    parameters={{
+      docs: {
+        source: {
+          code: primaryMarkup,
+        },
+      },
+    }}
+  >
+    {() => primaryMarkup}
+  </Story>
+  <Story
+    name="Secondary"
+    parameters={{
+      docs: {
+        source: {
+          code: secondaryMarkup,
+        },
+      },
+    }}
+  >
+    {() => secondaryMarkup}
+  </Story>
 </Canvas>
 
 ## Sizes
 
 <Canvas>
-  <Story name="Small">{() => smallMarkup}</Story>
-  <Story name="Medium">{() => mediumMarkup}</Story>
-  <Story name="Large">{() => largeMarkup}</Story>
+  <Story
+    name="Small"
+    parameters={{
+      docs: {
+        source: {
+          code: smallMarkup,
+        },
+      },
+    }}
+  >
+    {() => smallMarkup}
+  </Story>
+  <Story
+    name="Medium"
+    parameters={{
+      docs: {
+        source: {
+          code: mediumMarkup,
+        },
+      },
+    }}
+  >
+    {() => mediumMarkup}
+  </Story>
+  <Story
+    name="Large"
+    parameters={{
+      docs: {
+        source: {
+          code: largeMarkup,
+        },
+      },
+    }}
+  >
+    {() => largeMarkup}
+  </Story>
 </Canvas>
