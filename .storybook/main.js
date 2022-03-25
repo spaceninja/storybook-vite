@@ -15,6 +15,7 @@ module.exports = {
     },
     '@storybook/addon-a11y',
     'storybook-addon-themes',
+    'storybook-dark-mode',
   ],
   framework: '@storybook/html',
   core: {
