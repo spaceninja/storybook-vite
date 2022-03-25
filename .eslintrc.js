@@ -1,6 +1,11 @@
 // based on https://github.com/storybookjs/linter-config
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:mdx/recommended', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:mdx/recommended',
+    'plugin:storybook/recommended',
+    'prettier',
+  ],
   env: {
     browser: true,
     es6: true,
@@ -9,7 +14,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
-    ecmaFeatures: { jsx: true },
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   plugins: ['react'],
   settings: {
